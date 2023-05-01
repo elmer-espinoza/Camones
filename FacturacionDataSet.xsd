@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FacturacionDataSet" targetNamespace="http://tempuri.org/FacturacionDataSet.xsd" xmlns:mstns="http://tempuri.org/FacturacionDataSet.xsd" xmlns="http://tempuri.org/FacturacionDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="FacturaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FacturaConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.FacturaConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="FacturacionTableAdapter" GeneratorDataComponentClassName="FacturacionTableAdapter" Name="Facturacion" UserDataComponentName="FacturacionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FacturaConnectionString (Web.config)" DbObjectName="Facturacion.dbo.Facturacion" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Categoria, Razon_social, Ruc, Factura_id, Secuencia, Producto, Precio, Producto_id, Cantidad, Precio_Unitario, Fecha, Moneda, Total_Valor_Venta, Total_Impuestos, Total_Factura FROM dbo.Facturacion</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Categoria" DataSetColumn="Categoria" />
+              <Mapping SourceColumn="Razon_social" DataSetColumn="Razon_social" />
+              <Mapping SourceColumn="Ruc" DataSetColumn="Ruc" />
+              <Mapping SourceColumn="Factura_id" DataSetColumn="Factura_id" />
+              <Mapping SourceColumn="Secuencia" DataSetColumn="Secuencia" />
+              <Mapping SourceColumn="Producto" DataSetColumn="Producto" />
+              <Mapping SourceColumn="Precio" DataSetColumn="Precio" />
+              <Mapping SourceColumn="Producto_id" DataSetColumn="Producto_id" />
+              <Mapping SourceColumn="Cantidad" DataSetColumn="Cantidad" />
+              <Mapping SourceColumn="Precio_Unitario" DataSetColumn="Precio_Unitario" />
+              <Mapping SourceColumn="Fecha" DataSetColumn="Fecha" />
+              <Mapping SourceColumn="Moneda" DataSetColumn="Moneda" />
+              <Mapping SourceColumn="Total_Valor_Venta" DataSetColumn="Total_Valor_Venta" />
+              <Mapping SourceColumn="Total_Impuestos" DataSetColumn="Total_Impuestos" />
+              <Mapping SourceColumn="Total_Factura" DataSetColumn="Total_Factura" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FacturacionDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="FacturacionDataSet" msprop:Generator_DataSetName="FacturacionDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Facturacion" msprop:Generator_RowEvHandlerName="FacturacionRowChangeEventHandler" msprop:Generator_RowDeletedName="FacturacionRowDeleted" msprop:Generator_RowDeletingName="FacturacionRowDeleting" msprop:Generator_RowEvArgName="FacturacionRowChangeEvent" msprop:Generator_TablePropName="Facturacion" msprop:Generator_RowChangedName="FacturacionRowChanged" msprop:Generator_RowChangingName="FacturacionRowChanging" msprop:Generator_TableClassName="FacturacionDataTable" msprop:Generator_RowClassName="FacturacionRow" msprop:Generator_TableVarName="tableFacturacion" msprop:Generator_UserTableName="Facturacion">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Categoria" msprop:Generator_ColumnPropNameInRow="Categoria" msprop:Generator_ColumnPropNameInTable="CategoriaColumn" msprop:Generator_ColumnVarNameInTable="columnCategoria" msprop:Generator_UserColumnName="Categoria" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Razon_social" msprop:Generator_ColumnPropNameInRow="Razon_social" msprop:Generator_ColumnPropNameInTable="Razon_socialColumn" msprop:Generator_ColumnVarNameInTable="columnRazon_social" msprop:Generator_UserColumnName="Razon_social" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ruc" msprop:Generator_ColumnPropNameInRow="Ruc" msprop:Generator_ColumnPropNameInTable="RucColumn" msprop:Generator_ColumnVarNameInTable="columnRuc" msprop:Generator_UserColumnName="Ruc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Factura_id" msprop:Generator_ColumnPropNameInRow="Factura_id" msprop:Generator_ColumnPropNameInTable="Factura_idColumn" msprop:Generator_ColumnVarNameInTable="columnFactura_id" msprop:Generator_UserColumnName="Factura_id" type="xs:int" />
+              <xs:element name="Secuencia" msprop:Generator_ColumnPropNameInRow="Secuencia" msprop:Generator_ColumnPropNameInTable="SecuenciaColumn" msprop:Generator_ColumnVarNameInTable="columnSecuencia" msprop:Generator_UserColumnName="Secuencia" type="xs:int" />
+              <xs:element name="Producto" msprop:Generator_ColumnPropNameInRow="Producto" msprop:Generator_ColumnPropNameInTable="ProductoColumn" msprop:Generator_ColumnVarNameInTable="columnProducto" msprop:Generator_UserColumnName="Producto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Precio" msprop:Generator_ColumnPropNameInRow="Precio" msprop:Generator_ColumnPropNameInTable="PrecioColumn" msprop:Generator_ColumnVarNameInTable="columnPrecio" msprop:Generator_UserColumnName="Precio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Producto_id" msprop:Generator_ColumnPropNameInRow="Producto_id" msprop:Generator_ColumnPropNameInTable="Producto_idColumn" msprop:Generator_ColumnVarNameInTable="columnProducto_id" msprop:Generator_UserColumnName="Producto_id" type="xs:int" minOccurs="0" />
+              <xs:element name="Cantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_UserColumnName="Cantidad" type="xs:int" minOccurs="0" />
+              <xs:element name="Precio_Unitario" msprop:Generator_ColumnPropNameInRow="Precio_Unitario" msprop:Generator_ColumnPropNameInTable="Precio_UnitarioColumn" msprop:Generator_ColumnVarNameInTable="columnPrecio_Unitario" msprop:Generator_UserColumnName="Precio_Unitario" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Fecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_UserColumnName="Fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Moneda" msprop:Generator_ColumnPropNameInRow="Moneda" msprop:Generator_ColumnPropNameInTable="MonedaColumn" msprop:Generator_ColumnVarNameInTable="columnMoneda" msprop:Generator_UserColumnName="Moneda" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Total_Valor_Venta" msprop:Generator_ColumnPropNameInRow="Total_Valor_Venta" msprop:Generator_ColumnPropNameInTable="Total_Valor_VentaColumn" msprop:Generator_ColumnVarNameInTable="columnTotal_Valor_Venta" msprop:Generator_UserColumnName="Total_Valor_Venta" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Total_Impuestos" msprop:Generator_ColumnPropNameInRow="Total_Impuestos" msprop:Generator_ColumnPropNameInTable="Total_ImpuestosColumn" msprop:Generator_ColumnVarNameInTable="columnTotal_Impuestos" msprop:Generator_UserColumnName="Total_Impuestos" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Total_Factura" msprop:Generator_ColumnPropNameInRow="Total_Factura" msprop:Generator_ColumnPropNameInTable="Total_FacturaColumn" msprop:Generator_ColumnVarNameInTable="columnTotal_Factura" msprop:Generator_UserColumnName="Total_Factura" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Facturacion" />
+      <xs:field xpath="mstns:Factura_id" />
+      <xs:field xpath="mstns:Secuencia" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
